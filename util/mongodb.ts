@@ -1,6 +1,7 @@
 import { MongoClient } from "mongodb";
 import key from "../key";
 
+// Hardcoded env vars until deployment
 const MONGODB_URI: string =
   "mongodb+srv://" +
   key +
@@ -8,6 +9,7 @@ const MONGODB_URI: string =
 const MONGODB_DB: string = "DokiDesign";
 const MONGODB_COL: string = "Content";
 
+// Check for env vars, this will be used in deployment.
 if (!MONGODB_URI) {
   throw new Error("Please define the MONGODB_URI environment variable.");
 }
@@ -20,6 +22,7 @@ if (!MONGODB_COL) {
   throw new Error("Please define the MONGODB_COL environment variable.");
 }
 
+// Generate a new client from constructor
 const client = new MongoClient(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
