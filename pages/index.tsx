@@ -3,9 +3,14 @@ import { connectToDatabase } from "../util/mongodb";
 import { GetStaticProps } from "next";
 import Header from "../components/Title";
 import NavBar from "../components/NavBar";
+import Main from "../components/Main";
 import Footer from "../components/Footer";
 
-export default function Home() {
+interface HProps {
+  content: Array<Object>;
+}
+
+export default function Home({ content }: HProps) {
   return (
     <div className="app">
       <Head>
@@ -17,11 +22,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main>
-        <Header />
-        {/* Modify with props */}
-        <NavBar />
-      </main>
+      <Header />
+      {/* Modify with props */}
+      <NavBar items={content} />
+      <Main items={content} />
       <Footer />
     </div>
   );

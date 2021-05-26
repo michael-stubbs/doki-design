@@ -2,7 +2,16 @@ import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import styles from "../styles/Navbar.module.scss";
 
-function navbar() {
+interface NavP {
+  items: Array<Object>;
+}
+
+interface Items {
+  i?: Object;
+  name?: string;
+}
+
+function navbar(props: NavP) {
   return (
     <div className={styles.navbar}>
       <ButtonGroup
@@ -11,13 +20,9 @@ function navbar() {
         aria-label="outlined secondary button group"
         className={styles.navgroup}
       >
-        <Button>Test1</Button>
-        <Button>Test2</Button>
-        <Button>Test3</Button>
-        <Button>Test4</Button>
-        <Button>Test5</Button>
-        <Button>Test6</Button>
-        <Button>Test7</Button>
+        {props.items.map((i: Items) => {
+          return <Button>{i.name}</Button>;
+        })}
       </ButtonGroup>
     </div>
   );
