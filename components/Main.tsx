@@ -20,7 +20,7 @@ function Main(props: MainProps) {
   let current: Object = items[slide];
 
   return (
-    <main>
+    <main className={styles.mainBody}>
       <Carousel items={items} setSlide={setSlide} />
       <RoomText name={current.name} desc={current.desc} />
     </main>
