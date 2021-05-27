@@ -2,7 +2,6 @@ import Head from "next/head";
 import { connectToDatabase } from "../util/mongodb";
 import { GetStaticProps } from "next";
 import Header from "../components/Title";
-import NavBar from "../components/NavBar";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 
@@ -23,7 +22,6 @@ export default function Home({ content }: HProps) {
         />
       </Head>
       <Header />
-      <NavBar items={content} />
       <Main items={content} />
       <Footer />
     </div>

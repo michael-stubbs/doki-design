@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +7,7 @@ import styles from "../styles/Main.module.scss";
 interface Content {
   setSlide: any;
   items: Object[];
+  target: number;
 }
 
 interface Items {
@@ -18,6 +19,7 @@ interface Items {
 
 export default function Carousel(props: Content) {
   const items: Object[] = props.items;
+  let target = props.target;
 
   //   Slick Carousel settings
   const settings = {
@@ -33,6 +35,7 @@ export default function Carousel(props: Content) {
       }
     },
   };
+
   //   Map images to carousel slides
   return (
     <div className={styles.carousel}>

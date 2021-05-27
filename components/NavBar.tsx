@@ -1,14 +1,17 @@
+import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import styles from "../styles/Navbar.module.scss";
 
 interface NavP {
   items: Array<Object>;
+  slideSetter?: any;
 }
 
 interface Items {
   i?: Object;
   name?: string;
+  count?: number;
 }
 
 function navbar(props: NavP) {
@@ -22,7 +25,7 @@ function navbar(props: NavP) {
       >
         {/* Map over entires to create navbar titles */}
         {props.items.map((i: Items) => {
-          return <Button>{i.name}</Button>;
+          return <Button onClick={props.slideSetter(i.count)}>{i.name}</Button>;
         })}
       </ButtonGroup>
     </div>
