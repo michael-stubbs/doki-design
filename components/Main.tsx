@@ -7,12 +7,17 @@ interface MainProps {
   items: Array<Object>;
 }
 
+interface Object {
+  name?: string;
+  desc?: string;
+}
+
 function Main(props: MainProps) {
   const items: Array<Object> = props.items;
 
   const [slide, setSlide] = useState(0);
 
-  let current: any = items[slide];
+  let current: Object = items[slide];
 
   return (
     <main>

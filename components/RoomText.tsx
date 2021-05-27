@@ -1,8 +1,8 @@
 import styles from "../styles/Main.module.scss";
 
 interface RoomProps {
-  name: string;
-  desc: string;
+  name?: string;
+  desc?: string;
 }
 
 function RoomText(props: RoomProps) {
