@@ -13,10 +13,10 @@ interface Object {
 }
 
 function Main(props: MainProps) {
-  const items: Array<Object> = props.items;
-
   const [slide, setSlide] = useState(0);
 
+  // Set custom consts to assign type
+  const items: Array<Object> = props.items;
   let current: Object = items[slide];
 
   return (

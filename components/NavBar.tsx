@@ -20,6 +20,7 @@ function navbar(props: NavP) {
         aria-label="outlined secondary button group"
         className={styles.navgroup}
       >
+        {/* Map over entires to create navbar titles */}
         {props.items.map((i: Items) => {
           return <Button>{i.name}</Button>;
         })}

@@ -23,7 +23,6 @@ export default function Home({ content }: HProps) {
         />
       </Head>
       <Header />
-      {/* Modify with props */}
       <NavBar items={content} />
       <Main items={content} />
       <Footer />
@@ -31,7 +30,7 @@ export default function Home({ content }: HProps) {
   );
 }
 
-// We can pass the entire object down the tree to map, but this may be bad practice
+// Pass the entire object array down to Main and Navbar
 export const getStaticProps: GetStaticProps = async (context) => {
   const { collection } = await connectToDatabase();
 

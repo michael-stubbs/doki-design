@@ -10,7 +10,6 @@ interface Content {
 }
 
 interface Items {
-  i: Object;
   image?: string;
   name?: string;
   count?: string;
@@ -18,8 +17,9 @@ interface Items {
 }
 
 export default function Carousel(props: Content) {
-  const items: any = props.items;
+  const items: Object[] = props.items;
 
+  //   Slick Carousel settings
   const settings = {
     dots: true,
     infinite: true,
@@ -33,6 +33,7 @@ export default function Carousel(props: Content) {
       }
     },
   };
+  //   Map images to carousel slides
   return (
     <div className={styles.carousel}>
       <Slider {...settings}>
