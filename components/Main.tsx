@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Carousel from "../components/Carousel";
+import MainCarousel from "../components/Carousel";
 import RoomText from "../components/RoomText";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Main.module.scss";
@@ -17,17 +17,19 @@ function Main(props: MainProps) {
   // Current carousel slide state
   const [slide, setSlide] = useState(0);
   // Target slide for Navbar
-  const [targetSlide, setTargetSlide] = useState(slide);
+  const [targetSlide, setTargetSlide] = useState(0);
 
   // Set custom consts to assign type
   const items: Array<Object> = props.items;
+
+  // Current selection in content allows RoomText to update
   let current: Object = items[slide];
 
   return (
     <>
-      <NavBar items={items} slideSetter={setTargetSlide} />
+      <NavBar items={items} slideSetter={setSlide} />
       <main className={styles.mainBody}>
-        <Carousel items={items} setSlide={setSlide} target={targetSlide} />
+        <MainCarousel items={items} setSlide={setSlide} slide={slide} />
         <RoomText name={current.name} desc={current.desc} />
       </main>
     </>

@@ -1,13 +1,11 @@
-import React, { useEffect, useRef } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 import styles from "../styles/Main.module.scss";
 
 interface Content {
   setSlide: any;
   items: Object[];
-  target: number;
+  slide: number;
 }
 
 interface Items {
@@ -17,33 +15,32 @@ interface Items {
   desc?: string;
 }
 
-export default function Carousel(props: Content) {
+export default function CarouselMain(props: Content) {
   const items: Object[] = props.items;
-  let target = props.target;
 
-  //   Slick Carousel settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    beforeChange: (current: number, next: number) => {
-      {
-        props.setSlide(next);
-      }
-    },
+  const handleSelect = (selectedIndex: number, e: any) => {
+    props.setSlide(selectedIndex);
   };
 
   //   Map images to carousel slides
   return (
     <div className={styles.carousel}>
-      <Slider {...settings}>
+      <Carousel
+        activeIndex={props.slide}
+        onSelect={handleSelect}
+        interval={null}
+      >
         {items.map((i: Items) => {
-          return <img src={i.image} className={i.name} key={i.count} />;
+          return (
+            <Carousel.Item>
+              <img src={i.image} className={i.name} key={i.count} />
+            </Carousel.Item>
+          );
         })}
-      </Slider>
+      </Carousel>
     </div>
   );
 }
+
+// pass current slide up tree with setSlide
+// Use target slide to update the current slide onclick (already set up)
