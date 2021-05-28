@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import TestBtnGroup from "../components/TestBtnGroup";
 import styles from "../styles/Main.module.scss";
 
 interface Content {
@@ -24,7 +25,7 @@ export default function CarouselMain(props: Content) {
 
   //   Map images to carousel slides
   return (
-    <div className={styles.carousel}>
+    <div className={styles.carouselMain}>
       <Carousel
         activeIndex={props.slide}
         onSelect={handleSelect}
@@ -38,6 +39,7 @@ export default function CarouselMain(props: Content) {
           );
         })}
       </Carousel>
+      <TestBtnGroup />
     </div>
   );
 }
