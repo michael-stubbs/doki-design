@@ -17,7 +17,12 @@ function TestBtnGroup() {
 
   return (
     <div className={styles.testGroup}>
-      <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+      <OverlayTrigger
+        trigger="click"
+        rootClose
+        placement="right"
+        overlay={popover}
+      >
         <ButtonBase>
           <FontAwesomeIcon
             icon={faPlusCircle}
