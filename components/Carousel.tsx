@@ -39,7 +39,7 @@ export default function CarouselMain(props: Content) {
           );
         })}
       </Carousel>
-      <TestBtnGroup />
+      <TestBtnGroup slide={props.slide} />
     </div>
   );
 }
