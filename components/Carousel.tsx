@@ -32,9 +32,10 @@ export default function CarouselMain(props: Content) {
         interval={null}
       >
         {items.map((i: Items) => {
+          let srcUrl: string = "/" + i.image;
           return (
             <Carousel.Item>
-              <img src={i.image} className={i.name} key={i.count} />
+              <img src={srcUrl} className={i.name} key={i.count} alt={i.name} />
             </Carousel.Item>
           );
         })}

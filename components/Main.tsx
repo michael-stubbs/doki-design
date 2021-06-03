@@ -10,7 +10,7 @@ interface MainProps {
 }
 
 interface Object {
-  name?: string;
+  bodyname?: string;
   desc?: string;
 }
 
@@ -26,7 +26,7 @@ function Main(props: MainProps) {
       <NavBar items={props.items} slideSetter={setSlide} />
       <main className={styles.mainBody}>
         <MainCarousel items={props.items} setSlide={setSlide} slide={slide} />
-        <RoomText name={current.name} desc={current.desc} />
+        <RoomText name={current.bodyname} desc={current.desc} />
       </main>
     </>
   );
