@@ -22,3 +22,45 @@ a {
 .carousel img {
   width: 1100px !important;
 }
+
+@mixin imgbreak($imgwidth) {
+  .carousel img {
+    width: $imgwidth !important;
+  }
+}
+
+// This seems to be the best way to manage carousel responsiveness with absolute positioned buttons
+// RH Rooms used this method as well with slick-carousel
+@media only screen and (max-width: 1644px) {
+  @include imgbreak(1000px);
+}
+
+@media only screen and (max-width: 1544px) {
+  @include imgbreak(900px);
+}
+
+@media only screen and (max-width: 1444px) {
+  @include imgbreak(800px);
+}
+
+@media only screen and (max-width: 1344px) {
+  @include imgbreak(900px);
+}
+
+@media only screen and (max-width: 902px) {
+  @include imgbreak(800px);
+}
+
+@media only screen and (max-width: 802px) {
+  @include imgbreak(700px);
+}
+
+@media only screen and (max-width: 702px) {
+  @include imgbreak(600px);
+}
+
+@media only screen and (max-width: 602px) {
+  @include imgbreak(500px);
+}
+
+// Implement button or item changes below 600px, evaluate later with full site
