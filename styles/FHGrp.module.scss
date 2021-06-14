@@ -9,30 +9,30 @@
 
 .sofa {
   @include btn;
-  top: 5rem;
-  left: 5rem;
+  bottom: 10rem;
+  left: 25rem;
 }
 
 .art {
   @include btn;
-  top: 6rem;
-  left: 6rem;
+  top: 15rem;
+  right: 11rem;
 }
 
 .ottoman {
   @include btn;
-  top: 7rem;
-  left: 7rem;
+  bottom: 14rem;
+  right: 15rem;
 }
 
 .paint {
   @include btn;
-  top: 8rem;
-  left: 8rem;
+  top: 9rem;
+  right: 18rem;
 }
 
 .chair {
   @include btn;
-  top: 9rem;
-  left: 9rem;
+  bottom: 21rem;
+  left: 31rem;
 }
