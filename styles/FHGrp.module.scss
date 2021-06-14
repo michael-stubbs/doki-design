@@ -1,0 +1,38 @@
+@mixin btn {
+  z-index: 10;
+  position: absolute;
+}
+
+.itemBtn {
+  color: grey;
+}
+
+.sofa {
+  @include btn;
+  top: 5rem;
+  left: 5rem;
+}
+
+.art {
+  @include btn;
+  top: 6rem;
+  left: 6rem;
+}
+
+.ottoman {
+  @include btn;
+  top: 7rem;
+  left: 7rem;
+}
+
+.paint {
+  @include btn;
+  top: 8rem;
+  left: 8rem;
+}
+
+.chair {
+  @include btn;
+  top: 9rem;
+  left: 9rem;
+}

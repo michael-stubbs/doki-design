@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import TestBtnGroup from "../components/TestBtnGroup";
+import FHBtnGrp from "../components/FHBtnGrp";
 import styles from "../styles/Main.module.scss";
 
 interface Content {
@@ -40,10 +41,7 @@ export default function CarouselMain(props: Content) {
           );
         })}
       </Carousel>
-      <TestBtnGroup slide={props.slide} />
+      <FHBtnGrp slide={props.slide} items={items[1]} />
     </div>
   );
 }
-
-// pass current slide up tree with setSlide
-// Use target slide to update the current slide onclick (already set up)
