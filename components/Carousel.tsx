@@ -1,7 +1,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import TestBtnGroup from "../components/TestBtnGroup";
-import FHBtnGrp from "../components/FHBtnGrp";
+import FHBtnGrp from "./FHBtnGrp";
+import BohBtnGrp from "./BohBtnGrp";
+import EclBtnGrp from "./EclBtnGrp";
 import styles from "../styles/Main.module.scss";
 
 interface Content {
@@ -42,6 +43,8 @@ export default function CarouselMain(props: Content) {
         })}
       </Carousel>
       <FHBtnGrp slide={props.slide} items={items[1]} />
+      <BohBtnGrp slide={props.slide} items={items[3]} />
+      <EclBtnGrp slide={props.slide} items={items[4]} />
     </div>
   );
 }
