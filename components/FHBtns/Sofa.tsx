@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -14,8 +13,6 @@ interface PopProps {
 }
 
 function Sofa(props: PopProps) {
-  const [style, setStyle] = useState({ visibility: "collapse" });
-
   // Popover content from Bootstrap
   const popover = (
     <Popover id="FHSofa">
@@ -25,19 +22,8 @@ function Sofa(props: PopProps) {
       </Popover.Content>
     </Popover>
   );
-
-  //   Effect only updates when Slide# updates
-  // Only shows item links on appropriate slide
-  useEffect(() => {
-    if (props.slide === 1) {
-      setStyle({ visibility: "visible" });
-    } else {
-      setStyle({ visibility: "collapse" });
-    }
-  }, [props.slide]);
-
   return (
-    <div className={styles.sofa} style={style}>
+    <div className={styles.sofa}>
       <OverlayTrigger
         trigger="click"
         rootClose

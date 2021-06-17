@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -14,11 +13,9 @@ interface PopProps {
 }
 
 function Art(props: PopProps) {
-  const [style, setStyle] = useState({ visibility: "collapse" });
-
   // Popover content from Bootstrap
   const popover = (
-    <Popover id="FHArt">
+    <Popover id="test-pop">
       <Popover.Title as="h3">{props.items.link2[1]}</Popover.Title>
       <Popover.Content>
         <a href={props.items.link2[0]}>{props.items.link2[0]}</a>
@@ -26,22 +23,12 @@ function Art(props: PopProps) {
     </Popover>
   );
 
-  //   Effect only updates when Slide# updates
-  // Only shows item links on appropriate slide
-  useEffect(() => {
-    if (props.slide === 1) {
-      setStyle({ visibility: "visible" });
-    } else {
-      setStyle({ visibility: "collapse" });
-    }
-  }, [props.slide]);
-
   return (
-    <div className={styles.art} style={style}>
+    <div className={styles.art}>
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="left"
+        placement="right"
         overlay={popover}
       >
         <ButtonBase>

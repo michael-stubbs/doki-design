@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import ButtonBase from "@material-ui/core/ButtonBase";
@@ -14,8 +13,6 @@ interface PopProps {
 }
 
 function Ottoman(props: PopProps) {
-  const [style, setStyle] = useState({ visibility: "collapse" });
-
   // Popover content from Bootstrap
   const popover = (
     <Popover id="FHOttoman">
@@ -26,18 +23,8 @@ function Ottoman(props: PopProps) {
     </Popover>
   );
 
-  //   Effect only updates when Slide# updates
-  // Only shows item links on appropriate slide
-  useEffect(() => {
-    if (props.slide === 1) {
-      setStyle({ visibility: "visible" });
-    } else {
-      setStyle({ visibility: "collapse" });
-    }
-  }, [props.slide]);
-
   return (
-    <div className={styles.ottoman} style={style}>
+    <div className={styles.ottoman}>
       <OverlayTrigger
         trigger="click"
         rootClose
