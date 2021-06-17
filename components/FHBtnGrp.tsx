@@ -12,15 +12,27 @@ interface PopProps {
 }
 
 function FHBtnGrp(props: PopProps) {
-  const [style, setStyle] = useState({ visibility: "collapse" });
+  const [style, setStyle] = useState({
+    visibility: "collapse",
+    opacity: 0,
+    transition: "visibility 0s 2s, opacity 2s linear",
+  });
 
   //   Effect only updates when Slide# updates
   // Only shows item links on appropriate slide
   useEffect(() => {
     if (props.slide === 1) {
-      setStyle({ visibility: "visible" });
+      setStyle({
+        visibility: "visible",
+        opacity: 1,
+        transition: "opacity 0.3s linear",
+      });
     } else {
-      setStyle({ visibility: "collapse" });
+      setStyle({
+        visibility: "collapse",
+        opacity: 0,
+        transition: "visibility 0s 0.3s, opacity 0.3s linear",
+      });
     }
   }, [props.slide]);
 
