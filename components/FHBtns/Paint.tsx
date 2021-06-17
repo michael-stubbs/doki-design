@@ -18,7 +18,7 @@ function Paint(props: PopProps) {
 
   // Popover content from Bootstrap
   const popover = (
-    <Popover id="test-pop">
+    <Popover id="FHPaint">
       <Popover.Title as="h3">{props.items.link5[1]}</Popover.Title>
       <Popover.Content>
         <a href={props.items.link5[0]}>{props.items.link5[0]}</a>

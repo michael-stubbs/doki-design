@@ -18,7 +18,7 @@ function Art(props: PopProps) {
 
   // Popover content from Bootstrap
   const popover = (
-    <Popover id="test-pop">
+    <Popover id="FHArt">
       <Popover.Title as="h3">{props.items.link2[1]}</Popover.Title>
       <Popover.Content>
         <a href={props.items.link2[0]}>{props.items.link2[0]}</a>

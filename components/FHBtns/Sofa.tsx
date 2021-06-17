@@ -18,7 +18,7 @@ function Sofa(props: PopProps) {
 
   // Popover content from Bootstrap
   const popover = (
-    <Popover id="test-pop">
+    <Popover id="FHSofa">
       <Popover.Title as="h3">{props.items.link1[1]}</Popover.Title>
       <Popover.Content>
         <a href={props.items.link1[0]}>{props.items.link1[0]}</a>
