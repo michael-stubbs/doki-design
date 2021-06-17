@@ -1,0 +1,255 @@
+@mixin btn {
+  z-index: 10;
+  position: absolute;
+}
+
+.itemBtn {
+  color: white;
+}
+
+.sofa {
+  @include btn;
+  bottom: 10rem;
+  left: 25rem;
+}
+
+.art {
+  @include btn;
+  top: 15rem;
+  right: 11rem;
+}
+
+.pillow {
+  @include btn;
+  bottom: 14rem;
+  right: 15rem;
+}
+
+.lamp {
+  @include btn;
+  top: 9rem;
+  right: 18rem;
+}
+
+.chair {
+  @include btn;
+  bottom: 21rem;
+  left: 31rem;
+}
+
+// This can't be the optimal way. Research this.
+@media only screen and (max-width: 1644px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 13rem;
+    right: 10rem;
+  }
+
+  .pillow {
+    bottom: 13rem;
+    right: 13rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 18rem;
+    left: 28rem;
+  }
+}
+
+@media only screen and (max-width: 1544px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 1444px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 1344px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 902px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 802px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 702px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .pillow {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .lamp {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}

@@ -1,59 +1,46 @@
-// import { useState, useEffect } from "react";
-// import Popover from "react-bootstrap/Popover";
-// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-// import ButtonBase from "@material-ui/core/ButtonBase";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
-// import "@fortawesome/fontawesome-svg-core/styles.css";
+import Popover from "react-bootstrap/Popover";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import ButtonBase from "@material-ui/core/ButtonBase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-// import styles from "../../styles/BohGrp.module.scss";
+import styles from "../../styles/BohGrp.module.scss";
 
-// interface PopProps {
-//   slide: number;
-//   items: any;
-// }
+interface PopProps {
+  slide: number;
+  items: any;
+}
 
-// function Art(props: PopProps) {
-//   const [style, setStyle] = useState({ visibility: "collapse" });
+function Art(props: PopProps) {
+  // Popover content from Bootstrap
+  const popover = (
+    <Popover id="BohArt">
+      <Popover.Title as="h3">{props.items.link4[1]}</Popover.Title>
+      <Popover.Content>
+        <a href={props.items.link4[0]}>{props.items.link4[0]}</a>
+      </Popover.Content>
+    </Popover>
+  );
 
-//   // Popover content from Bootstrap
-//   const popover = (
-//     <Popover id="FHArt">
-//       <Popover.Title as="h3">{props.items.link2[1]}</Popover.Title>
-//       <Popover.Content>
-//         <a href={props.items.link2[0]}>{props.items.link2[0]}</a>
-//       </Popover.Content>
-//     </Popover>
-//   );
+  return (
+    <div className={styles.art}>
+      <OverlayTrigger
+        trigger="click"
+        rootClose
+        placement="right"
+        overlay={popover}
+      >
+        <ButtonBase>
+          <FontAwesomeIcon
+            icon={faPlusCircle}
+            className={styles.itemBtn}
+            size="lg"
+          />
+        </ButtonBase>
+      </OverlayTrigger>
+    </div>
+  );
+}
 
-//   //   Effect only updates when Slide# updates
-//   // Only shows item links on appropriate slide
-//   useEffect(() => {
-//     if (props.slide === 1) {
-//       setStyle({ visibility: "visible" });
-//     } else {
-//       setStyle({ visibility: "collapse" });
-//     }
-//   }, [props.slide]);
-
-//   return (
-//     <div className={styles.art} style={style}>
-//       <OverlayTrigger
-//         trigger="click"
-//         rootClose
-//         placement="left"
-//         overlay={popover}
-//       >
-//         <ButtonBase>
-//           <FontAwesomeIcon
-//             icon={faPlusCircle}
-//             className={styles.itemBtn}
-//             size="lg"
-//           />
-//         </ButtonBase>
-//       </OverlayTrigger>
-//     </div>
-//   );
-// }
-
-// export default Art;
+export default Art;
