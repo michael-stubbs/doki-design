@@ -1,4 +1,9 @@
 import { useState, useEffect } from "react";
+import Bookcase from "./EclBtns/Bookcase";
+import Paint from "./EclBtns/Paint";
+import Rug from "./EclBtns/Rug";
+import Sofa from "./EclBtns/Sofa";
+import Table from "./EclBtns/Table";
 
 import styles from "../styles/BohGrp.module.scss";
 
@@ -33,7 +38,11 @@ function EclBtnGrp(props: PopProps) {
 
   return (
     <div className={styles.testGroup0} style={style}>
-      {/* <Sofa slide={props.slide} items={props.items} /> */}
+      <Sofa slide={props.slide} items={props.items} />
+      <Bookcase slide={props.slide} items={props.items} />
+      <Paint slide={props.slide} items={props.items} />
+      <Rug slide={props.slide} items={props.items} />
+      <Table slide={props.slide} items={props.items} />
     </div>
   );
 }

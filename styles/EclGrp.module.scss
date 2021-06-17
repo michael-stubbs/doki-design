@@ -1,0 +1,255 @@
+@mixin btn {
+  z-index: 10;
+  position: absolute;
+}
+
+.itemBtn {
+  color: white;
+}
+
+.sofa {
+  @include btn;
+  bottom: 10rem;
+  left: 25rem;
+}
+
+.rug {
+  @include btn;
+  top: 15rem;
+  right: 11rem;
+}
+
+.bookcase {
+  @include btn;
+  bottom: 14rem;
+  right: 15rem;
+}
+
+.paint {
+  @include btn;
+  top: 9rem;
+  right: 18rem;
+}
+
+.table {
+  @include btn;
+  bottom: 21rem;
+  left: 31rem;
+}
+
+// This can't be the optimal way. Research this.
+@media only screen and (max-width: 1644px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 13rem;
+    right: 10rem;
+  }
+
+  .bookcase {
+    bottom: 13rem;
+    right: 13rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 18rem;
+    left: 28rem;
+  }
+}
+
+@media only screen and (max-width: 1544px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 1444px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 1344px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 902px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 802px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 702px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .rug {
+    top: 15rem;
+    right: 11rem;
+  }
+
+  .bookcase {
+    bottom: 14rem;
+    right: 15rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .table {
+    bottom: 21rem;
+    left: 31rem;
+  }
+}
