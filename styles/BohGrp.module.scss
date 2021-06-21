@@ -4,37 +4,37 @@
 }
 
 .itemBtn {
-  color: white;
+  color: grey;
 }
 
 .sofa {
   @include btn;
-  bottom: 10rem;
-  left: 25rem;
+  bottom: 24rem;
+  left: 35rem;
 }
 
 .art {
   @include btn;
   top: 15rem;
-  right: 11rem;
+  right: 26rem;
 }
 
 .pillow {
   @include btn;
-  bottom: 14rem;
-  right: 15rem;
+  bottom: 15rem;
+  right: 14rem;
 }
 
 .lamp {
   @include btn;
-  top: 9rem;
-  right: 18rem;
+  top: 11rem;
+  right: 3rem;
 }
 
 .chair {
   @include btn;
-  bottom: 21rem;
-  left: 31rem;
+  bottom: 6rem;
+  left: 36rem;
 }
 
 // This can't be the optimal way. Research this.
