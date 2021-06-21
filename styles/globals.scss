@@ -61,6 +61,13 @@ a {
 
 @media only screen and (max-width: 602px) {
   @include imgbreak(500px);
+  html {
+    overflow-x: hidden;
+  }
 }
 
-// Implement button or item changes below 600px, evaluate later with full site
+@media only screen and (max-width: 502px) {
+  @include imgbreak(420px);
+}
+
+// Implement button or item changes below 500px, evaluate later with full site

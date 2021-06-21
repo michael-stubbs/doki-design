@@ -1,18 +1,26 @@
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0.5rem 0;
   justify-content: center;
-  //   border-style: solid;
-  //   border-width: 0 0 2px 0;
-  //   border-color: #92b09a;
 }
 
 .navgroup {
   margin: 1rem 0;
+  min-width: 200px;
   button {
     font-family: "Fira Mono", monospace;
     font-weight: 300;
     padding: 0 3rem;
     color: #32443a;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navgroup {
+    button {
+      font-size: 12px;
+      padding: 0 1rem;
+    }
   }
 }

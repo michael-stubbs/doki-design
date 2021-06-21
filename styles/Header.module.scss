@@ -16,3 +16,15 @@
     color: black;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .socialGroup {
+    button {
+      font-size: 14px;
+    }
+  }
+}
