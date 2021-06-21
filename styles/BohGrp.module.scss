@@ -175,30 +175,32 @@
 
 @media only screen and (max-width: 802px) {
   .sofa {
-    bottom: 10rem;
-    left: 25rem;
+    bottom: 12rem;
+    left: 18rem;
   }
 
   .art {
-    top: 15rem;
-    right: 11rem;
+    top: 10rem;
+    right: 16rem;
   }
 
   .pillow {
-    bottom: 14rem;
-    right: 15rem;
+    bottom: 10rem;
+    right: 8rem;
   }
 
   .lamp {
-    top: 9rem;
-    right: 18rem;
+    top: 7rem;
+    right: 2rem;
   }
 
   .chair {
-    bottom: 21rem;
-    left: 31rem;
+    bottom: 3rem;
+    left: 23rem;
   }
 }
+
+// Stil need to add past this pt
 
 @media only screen and (max-width: 702px) {
   .sofa {
