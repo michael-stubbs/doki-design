@@ -23,6 +23,13 @@
   }
 }
 
+// 1920x1080 Standard
+@media only screen and (max-height: 1080px) {
+  .carouselMain {
+    margin-top: 3rem;
+  }
+}
+
 @media only screen and (max-width: 1344px) {
   .mainBody {
     flex-wrap: wrap;

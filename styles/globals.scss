@@ -1,4 +1,4 @@
-//     font-family: 'Fira Mono', monospace;
+// font-family: 'Fira Mono', monospace;
 // #92b09a
 // #32443a
 // #e5d3d1
@@ -30,7 +30,7 @@ a {
 }
 
 // This seems to be the best way to manage carousel responsiveness with absolute positioned buttons
-// This also really sucks to work on.
+// This also really sucks to work on
 // RH used this method with slick-carousel
 
 // Widescreen / Ultra-Widescreen
@@ -40,9 +40,9 @@ a {
 
 @media only screen and (min-width: 2582px) {
   @include imgbreak(1300px);
-} // This is getting absurd.
+}
 
-// 1920x1080 Standard (I now regret having a 1440p dev screen)
+// 1920x1080 Standard
 @media only screen and (max-height: 1080px) {
   @include imgbreak(1000px);
 }
