@@ -5,7 +5,7 @@ import Lamp from "./BohBtns/Lamp";
 import Pillow from "./BohBtns/Pillow";
 import Sofa from "./BohBtns/Sofa";
 
-import styles from "../styles/BohGrp.module.scss";
+import styles from "../styles/BtnGroups/BohGrp.module.scss";
 
 interface PopProps {
   slide: number;

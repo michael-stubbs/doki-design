@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import styles from "../../styles/EclGrp.module.scss";
+import styles from "../../styles/BtnGroups/EclGrp.module.scss";
 
 interface PopProps {
   slide: number;

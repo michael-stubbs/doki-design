@@ -5,7 +5,7 @@ import Rug from "./EclBtns/Rug";
 import Sofa from "./EclBtns/Sofa";
 import Table from "./EclBtns/Table";
 
-import styles from "../styles/BohGrp.module.scss";
+import styles from "../styles/BtnGroups/EclGrp.module.scss";
 
 interface PopProps {
   slide: number;

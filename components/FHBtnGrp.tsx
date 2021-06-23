@@ -4,7 +4,8 @@ import Art from "./FHBtns/Art";
 import Ottoman from "./FHBtns/Ottoman";
 import Paint from "./FHBtns/Paint";
 import Chair from "./FHBtns/Chair";
-import styles from "../styles/Main.module.scss";
+
+import styles from "../styles/BtnGroups/FHGrp.module.scss";
 
 interface PopProps {
   slide: number;
