@@ -30,7 +30,24 @@ a {
 }
 
 // This seems to be the best way to manage carousel responsiveness with absolute positioned buttons
-// RH Rooms used this method as well with slick-carousel
+// This also really sucks to work on.
+// RH used this method with slick-carousel
+
+// Widescreen / Ultra-Widescreen
+@media only screen and (min-width: 2446px) {
+  @include imgbreak(1200px);
+}
+
+@media only screen and (min-width: 2582px) {
+  @include imgbreak(1300px);
+} // This is getting absurd.
+
+// 1920x1080 Standard (I now regret having a 1440p dev screen)
+@media only screen and (max-height: 1080px) {
+  @include imgbreak(1000px);
+}
+
+// Decreasing from 16:9
 @media only screen and (max-width: 1644px) {
   @include imgbreak(1000px);
 }
