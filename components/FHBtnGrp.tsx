@@ -16,7 +16,7 @@ function FHBtnGrp(props: PopProps) {
   const [style, setStyle] = useState({
     visibility: "collapse",
     opacity: 0,
-    transition: "visibility 0s 0.7s, opacity 0.7s linear",
+    transition: "visibility 0s 0.2s, opacity 0.2s linear",
   });
 
   //   Effect only updates when Slide# updates
