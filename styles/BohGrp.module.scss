@@ -37,6 +37,46 @@
   left: 36rem;
 }
 
+// Widescreen / Ultra-Widescreen
+@media only screen and (min-width: 2446px) {
+}
+
+@media only screen and (min-width: 2582px) {
+}
+
+// 1920x1080 Standard (I now regret having a 1440p dev screen)
+@media only screen and (max-height: 1080px) {
+  .sofa {
+    @include btn;
+    bottom: 17rem;
+    left: 35rem;
+  }
+
+  .art {
+    @include btn;
+    top: 15rem;
+    right: 24rem;
+  }
+
+  .pillow {
+    @include btn;
+    bottom: 15rem;
+    right: 12rem;
+  }
+
+  .lamp {
+    @include btn;
+    top: 11rem;
+    right: 3rem;
+  }
+
+  .chair {
+    @include btn;
+    bottom: 6rem;
+    left: 33rem;
+  }
+}
+
 // This can't be the optimal way. Research this.
 @media only screen and (max-width: 1644px) {
   .sofa {
