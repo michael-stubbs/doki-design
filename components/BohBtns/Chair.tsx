@@ -28,7 +28,7 @@ function Chair(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="right"
+        placement="left"
         overlay={popover}
       >
         <ButtonBase>

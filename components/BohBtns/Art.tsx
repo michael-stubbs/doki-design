@@ -28,7 +28,7 @@ function Art(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="right"
+        placement="top"
         overlay={popover}
       >
         <ButtonBase>
