@@ -37,7 +37,33 @@
   left: 31rem;
 }
 
-// This can't be the optimal way. Research this.
+@media only screen and (max-height: 1080px) {
+  .sofa {
+    bottom: 10rem;
+    left: 25rem;
+  }
+
+  .art {
+    top: 13rem;
+    right: 10rem;
+  }
+
+  .ottoman {
+    bottom: 13rem;
+    right: 13rem;
+  }
+
+  .paint {
+    top: 9rem;
+    right: 18rem;
+  }
+
+  .chair {
+    bottom: 18rem;
+    left: 28rem;
+  }
+}
+
 @media only screen and (max-width: 1644px) {
   .sofa {
     bottom: 10rem;
