@@ -9,14 +9,14 @@
 
 .sofa {
   @include btn;
-  bottom: 10rem;
-  left: 25rem;
+  bottom: 18rem;
+  left: 35rem;
 }
 
 .rug {
   @include btn;
-  top: 15rem;
-  right: 11rem;
+  bottom: 3rem;
+  left: 3rem;
 }
 
 .bookcase {
@@ -37,7 +37,9 @@
   left: 31rem;
 }
 
-// This can't be the optimal way. Research this.
+@media only screen and (max-height: 1080px) {
+}
+
 @media only screen and (max-width: 1644px) {
   .sofa {
     bottom: 10rem;
@@ -45,8 +47,8 @@
   }
 
   .rug {
-    top: 13rem;
-    right: 10rem;
+    bottom: 13rem;
+    left: 10rem;
   }
 
   .bookcase {
@@ -72,8 +74,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
@@ -99,8 +101,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
@@ -126,8 +128,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
@@ -153,8 +155,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
@@ -180,8 +182,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
@@ -207,8 +209,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
@@ -234,8 +236,8 @@
   }
 
   .rug {
-    top: 15rem;
-    right: 11rem;
+    bottom: 15rem;
+    left: 11rem;
   }
 
   .bookcase {
