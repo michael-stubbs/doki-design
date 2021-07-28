@@ -43,9 +43,9 @@ export default function CarouselMain(props: Content) {
         })}
       </Carousel>
       {/* Button groups for each slide, passed its array reference */}
-      <FHBtnGrp slide={props.slide} items={items[1]} />
-      <BohBtnGrp slide={props.slide} items={items[3]} />
-      <EclBtnGrp slide={props.slide} items={items[4]} />
+      <FHBtnGrp slide={props.slide} items={items[0]} />
+      <BohBtnGrp slide={props.slide} items={items[1]} />
+      <EclBtnGrp slide={props.slide} items={items[2]} />
     </div>
   );
 }
