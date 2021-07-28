@@ -15,14 +15,14 @@
 
 .rug {
   @include btn;
-  bottom: 3rem;
-  left: 3rem;
+  bottom: 6rem;
+  left: 20rem;
 }
 
 .bookcase {
   @include btn;
-  bottom: 14rem;
-  right: 15rem;
+  bottom: 37rem;
+  right: 8rem;
 }
 
 .paint {
@@ -33,8 +33,8 @@
 
 .table {
   @include btn;
-  bottom: 21rem;
-  left: 31rem;
+  bottom: 10rem;
+  left: 42rem;
 }
 
 @media only screen and (max-height: 1080px) {
