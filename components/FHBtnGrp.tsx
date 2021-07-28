@@ -22,7 +22,7 @@ function FHBtnGrp(props: PopProps) {
   //   Effect only updates when Slide# updates
   // Only shows item links on appropriate slide
   useEffect(() => {
-    if (props.slide === 1) {
+    if (props.slide === 0) {
       setStyle({
         visibility: "visible",
         opacity: 1,

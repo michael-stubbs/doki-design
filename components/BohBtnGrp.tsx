@@ -21,7 +21,7 @@ function BohBtnGrp(props: PopProps) {
   //   Effect only updates when Slide# updates
   // Only shows item links on appropriate slide
   useEffect(() => {
-    if (props.slide === 3) {
+    if (props.slide === 1) {
       setStyle({
         visibility: "visible",
         opacity: 1,
