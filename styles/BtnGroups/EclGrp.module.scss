@@ -33,8 +33,8 @@
 
 .table {
   @include btn;
-  bottom: 10rem;
-  left: 42rem;
+  bottom: 9rem;
+  left: 38rem;
 }
 
 @media only screen and (max-height: 1080px) {
@@ -64,32 +64,32 @@
   }
 }
 
-@media only screen and (max-width: 1644px) {
-  .sofa {
-    bottom: 10rem;
-    left: 25rem;
-  }
+// @media only screen and (max-width: 1644px) {
+//   .sofa {
+//     bottom: 10rem;
+//     left: 25rem;
+//   }
 
-  .rug {
-    bottom: 13rem;
-    left: 10rem;
-  }
+//   .rug {
+//     bottom: 13rem;
+//     left: 10rem;
+//   }
 
-  .bookcase {
-    bottom: 13rem;
-    right: 13rem;
-  }
+//   .bookcase {
+//     bottom: 13rem;
+//     right: 13rem;
+//   }
 
-  .paint {
-    top: 9rem;
-    right: 18rem;
-  }
+//   .paint {
+//     top: 9rem;
+//     right: 18rem;
+//   }
 
-  .table {
-    bottom: 18rem;
-    left: 28rem;
-  }
-}
+//   .table {
+//     bottom: 18rem;
+//     left: 28rem;
+//   }
+// }
 
 @media only screen and (max-width: 1544px) {
   .sofa {
