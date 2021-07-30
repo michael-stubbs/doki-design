@@ -18,7 +18,7 @@ function Paint(props: PopProps) {
     <Popover id="FHPaint">
       <Popover.Title as="h3">{props.items.link5[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link5[0]}>{props.items.link5[0]}</a>
+        <a href={props.items.link5[0]}>Purchase (Behr)</a>
       </Popover.Content>
     </Popover>
   );
@@ -27,7 +27,7 @@ function Paint(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="right"
+        placement="left"
         overlay={popover}
       >
         <ButtonBase>

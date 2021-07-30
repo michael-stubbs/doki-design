@@ -18,7 +18,7 @@ function Art(props: PopProps) {
     <Popover id="FHArt">
       <Popover.Title as="h3">{props.items.link2[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link2[0]}>{props.items.link2[0]}</a>
+        <a href={props.items.link2[0]}>Purchase (Stoffer)</a>
       </Popover.Content>
     </Popover>
   );
@@ -28,7 +28,7 @@ function Art(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="right"
+        placement="left"
         overlay={popover}
       >
         <ButtonBase>

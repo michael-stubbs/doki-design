@@ -18,7 +18,7 @@ function Chair(props: PopProps) {
     <Popover id="FHChair">
       <Popover.Title as="h3">{props.items.link3[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link3[0]}>{props.items.link3[0]}</a>
+        <a href={props.items.link3[0]}>Purchase (McGee)</a>
       </Popover.Content>
     </Popover>
   );

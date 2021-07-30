@@ -18,7 +18,7 @@ function Sofa(props: PopProps) {
     <Popover id="FHSofa">
       <Popover.Title as="h3">{props.items.link1[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link1[0]}>{props.items.link1[0]}</a>
+        <a href={props.items.link1[0]}>Purchase (Arhaus)</a>
       </Popover.Content>
     </Popover>
   );
@@ -27,7 +27,7 @@ function Sofa(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="left"
+        placement="top"
         overlay={popover}
       >
         <ButtonBase>
