@@ -1,17 +1,28 @@
 import { MongoClient } from "mongodb";
-import key from "../key";
 
-// Hardcoded env vars until deployment
+// Dev hardcoded vars
+// import key from "../key";
+// const MONGODB_URI: string =
+//   "mongodb+srv://" +
+//   key +
+//   "@cluster0.epqz8.mongodb.net/Cluster0?retryWrites=true&w=majority";
+// const MONGODB_DB: string = "DokiDesign";
+// const MONGODB_COL: string = "Content";
+
+let Key = process.env.Key;
+let db = process.env.db;
+let col = process.env.col;
+
 const MONGODB_URI: string =
   "mongodb+srv://" +
-  key +
+  Key +
   "@cluster0.epqz8.mongodb.net/Cluster0?retryWrites=true&w=majority";
-const MONGODB_DB: string = "DokiDesign";
-const MONGODB_COL: string = "Content";
+const MONGODB_DB: any = db;
+const MONGODB_COL: any = col;
 
-// Check for env vars, this will be used in deployment.
-if (!MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable.");
+// Check for env vars
+if (!Key) {
+  throw new Error("Please define the MongoDB 'Key' environment variable.");
 }
 
 if (!MONGODB_DB) {
