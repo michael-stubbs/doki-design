@@ -13,7 +13,7 @@ interface PopProps {
 }
 
 function FHBtnGrp(props: PopProps) {
-  const [style, setStyle] = useState({
+  const [style, setStyle]: [any, any] = useState({
     visibility: "collapse",
     opacity: 0,
     transition: "visibility 0s 0.2s, opacity 0.2s linear",
