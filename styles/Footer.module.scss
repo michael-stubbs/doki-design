@@ -15,7 +15,8 @@
   margin-bottom: 0.5rem !important;
 }
 
-@media only screen and (max-width: 375px) {
+// iPhone 12 and smaller
+@media only screen and (max-width: 390px) {
   .footer {
     position: fixed;
   }
