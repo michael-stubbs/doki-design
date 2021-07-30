@@ -29,6 +29,27 @@
   }
 }
 
+// iPhone 12 Pro Max
+@media only screen and (max-width: 428px) {
+  .title {
+    margin-left: 0.5rem;
+    padding-top: 5px;
+    font-size: 26px;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .socialGroup {
+    margin-right: 0.5rem;
+
+    button {
+      font-size: 13px;
+    }
+  }
+}
+
 // iPhone X
 @media only screen and (max-width: 390px) {
   .title {

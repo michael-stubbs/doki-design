@@ -294,6 +294,34 @@
   }
 }
 
+// iPhone 12 Pro Max
+@media only screen and (max-width: 428px) {
+  .sofa {
+    bottom: 7rem;
+    left: 10rem;
+  }
+
+  .art {
+    top: 5rem;
+    right: 9rem;
+  }
+
+  .pillow {
+    bottom: 5rem;
+    right: 5rem;
+  }
+
+  .lamp {
+    top: 4rem;
+    right: 1rem;
+  }
+
+  .chair {
+    bottom: 2rem;
+    left: 14rem;
+  }
+}
+
 // iPhone 12
 @media only screen and (max-width: 390px) {
   .sofa {
