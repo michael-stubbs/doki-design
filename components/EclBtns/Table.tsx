@@ -28,7 +28,7 @@ function Table(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="top"
+        placement="left"
         overlay={popover}
       >
         <ButtonBase>
