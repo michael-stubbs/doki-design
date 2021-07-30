@@ -29,6 +29,10 @@ a {
   }
 }
 
+.MuiButtonGroup-groupedTextPrimary:not(:last-child) {
+  border-color: #66737a !important;
+}
+
 // This seems to be the best way to manage carousel responsiveness with absolute positioned buttons
 // This also really sucks to work on
 // RH used this method with slick-carousel
