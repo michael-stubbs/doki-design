@@ -70,6 +70,12 @@ a {
 
 @media only screen and (max-width: 802px) {
   @include imgbreak(700px);
+  .popover-header {
+    font-size: 14px;
+  }
+  .popover-body {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 702px) {
