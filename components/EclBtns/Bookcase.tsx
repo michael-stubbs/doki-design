@@ -18,7 +18,7 @@ function Bookcase(props: PopProps) {
     <Popover id="EclBookcase">
       <Popover.Title as="h3">{props.items.link3[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link3[0]}>{props.items.link3[0]}</a>
+        <a href={props.items.link3[0]}>Purchase (IKEA)</a>
       </Popover.Content>
     </Popover>
   );
@@ -28,7 +28,7 @@ function Bookcase(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="right"
+        placement="left"
         overlay={popover}
       >
         <ButtonBase>

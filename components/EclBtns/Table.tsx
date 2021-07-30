@@ -18,7 +18,7 @@ function Table(props: PopProps) {
     <Popover id="EclTable">
       <Popover.Title as="h3">{props.items.link1[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link1[0]}>{props.items.link1[0]}</a>
+        <a href={props.items.link1[0]}>Purchase (Wayfair)</a>
       </Popover.Content>
     </Popover>
   );
@@ -28,7 +28,7 @@ function Table(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="right"
+        placement="top"
         overlay={popover}
       >
         <ButtonBase>
