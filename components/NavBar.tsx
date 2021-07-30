@@ -24,10 +24,11 @@ function Navbar(props: NavP) {
       >
         {/* Map over entires to create navbar titles */}
         {props.items.map((i: Items) => {
+          let count: any = i.count;
           return (
             <Button
-              onClick={() => props.slideSetter(parseInt(i.count))}
-              key={i.count}
+              onClick={() => props.slideSetter(parseInt(count))}
+              key={count}
             >
               {i.name}
             </Button>
