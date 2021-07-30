@@ -11,10 +11,18 @@ function SocialGroup() {
         variant="text"
         aria-label="outlined secondary button group"
       >
-        <Button href="" target="_blank" rel="noopener noreferrer">
+        <Button
+          href="https://www.instagram.com/juneleeid/?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Designer
         </Button>
-        <Button href="" target="_blank" rel="noopener noreferrer">
+        <Button
+          href="https://github.com/michael-stubbs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Developer
         </Button>
       </ButtonGroup>
