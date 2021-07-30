@@ -18,7 +18,7 @@ function Lamp(props: PopProps) {
     <Popover id="BohLamp">
       <Popover.Title as="h3">{props.items.link2[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link2[0]}>{props.items.link2[0]}</a>
+        <a href={props.items.link2[0]}>Purchase (CB)</a>
       </Popover.Content>
     </Popover>
   );

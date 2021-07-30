@@ -18,7 +18,7 @@ function Pillow(props: PopProps) {
     <Popover id="BohPillow">
       <Popover.Title as="h3">{props.items.link3[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link3[0]}>{props.items.link3[0]}</a>
+        <a href={props.items.link3[0]}>Purchase (Overstock)</a>
       </Popover.Content>
     </Popover>
   );

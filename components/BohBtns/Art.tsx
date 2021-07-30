@@ -18,7 +18,7 @@ function Art(props: PopProps) {
     <Popover id="BohArt">
       <Popover.Title as="h3">{props.items.link4[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link4[0]}>{props.items.link4[0]}</a>
+        <a href={props.items.link4[0]}>Purchase (Burke)</a>
       </Popover.Content>
     </Popover>
   );

@@ -18,7 +18,7 @@ function Sofa(props: PopProps) {
     <Popover id="BohSofa">
       <Popover.Title as="h3">{props.items.link5[1]}</Popover.Title>
       <Popover.Content>
-        <a href={props.items.link5[0]}>{props.items.link5[0]}</a>
+        <a href={props.items.link5[0]}>Purchase (Modsy)</a>
       </Popover.Content>
     </Popover>
   );
