@@ -15,8 +15,19 @@
   margin-bottom: 0.5rem !important;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 375px) {
   .footer {
-    position: absolute;
+    position: fixed;
+  }
+
+  .footerText {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .github {
+    span {
+      font-size: 12px;
+    }
   }
 }
