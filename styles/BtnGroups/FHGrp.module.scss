@@ -279,3 +279,31 @@
     left: 14rem;
   }
 }
+
+// iPhone X
+@media only screen and (max-width: 375px) {
+  .sofa {
+    bottom: 3rem;
+    left: 8rem;
+  }
+
+  .art {
+    top: 5rem;
+    right: 4rem;
+  }
+
+  .ottoman {
+    bottom: 4rem;
+    right: 5rem;
+  }
+
+  .paint {
+    top: 4rem;
+    right: 7rem;
+  }
+
+  .chair {
+    bottom: 6rem;
+    left: 12rem;
+  }
+}

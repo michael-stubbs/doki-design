@@ -96,4 +96,7 @@ a {
 // iPhone X
 @media only screen and (max-width: 375px) {
   @include imgbreak(370px);
+  .MuiButtonBase-root {
+    font-size: 13px;
+  }
 }

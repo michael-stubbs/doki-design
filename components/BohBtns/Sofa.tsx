@@ -28,7 +28,7 @@ function Sofa(props: PopProps) {
       <OverlayTrigger
         trigger="click"
         rootClose
-        placement="left"
+        placement="top"
         overlay={popover}
       >
         <ButtonBase>
