@@ -1,5 +1,5 @@
 .footer {
-  background-color: #92b09a;
+  background-color: #b6c5a6;
   bottom: 0;
   padding: 0.3rem;
   position: fixed;
@@ -9,44 +9,15 @@
 
 .footerText {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .github {
   margin-bottom: 0.5rem !important;
 }
 
-// iPhone 12 Pro Max
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 702px) {
   .footer {
-    position: fixed;
-  }
-
-  .footerText {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-
-  .github {
-    span {
-      font-size: 12px;
-    }
-  }
-}
-
-// iPhone 12 and smaller
-@media only screen and (max-width: 390px) {
-  .footer {
-    position: fixed;
-  }
-
-  .footerText {
-    font-size: 15px;
-    margin-bottom: 8px;
-  }
-
-  .github {
-    span {
-      font-size: 12px;
-    }
+    visibility: collapse;
   }
 }

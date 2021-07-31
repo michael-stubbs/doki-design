@@ -1,17 +1,22 @@
 .header {
-  background-color: #92b09a;
+  background-color: #f4f0ec;
   display: flex;
   justify-content: space-between;
 }
 
 .title {
-  margin-left: 2rem;
+  margin-left: 2.6rem;
+  padding-top: 2rem;
+}
+
+.logo {
+  margin: 0.5rem 0;
 }
 
 .socialGroup {
+  margin-right: 1rem;
   align-items: center;
   display: flex;
-  margin-right: 2rem;
   button {
     color: black;
   }
@@ -34,6 +39,10 @@
 
 // iPhone 12 Pro Max
 @media only screen and (max-width: 428px) {
+  .logo {
+    display: none;
+  }
+
   .title {
     margin-left: 0.5rem;
     padding-top: 5px;
