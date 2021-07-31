@@ -39,11 +39,8 @@
 
 // iPhone 12 Pro Max
 @media only screen and (max-width: 428px) {
-  .logo {
-    display: none;
-  }
-
   .title {
+    display: none;
     margin-left: 0.5rem;
     padding-top: 5px;
     font-size: 26px;
